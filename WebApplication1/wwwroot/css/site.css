@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 110vw;
+}
+
+.photo {
+    margin: 25px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 50vh;
+    flex: 0.5;
+    position: relative;
+    border-radius: 30px;
+    transition: flex 0.7s ease-in;
+}
+
+    .photo.active2 {
+        flex: 10;
+        background-color: #30302e;
+        background-image: 100%;
+    }
+
+    .photo h3 {
+        position: absolute;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        bottom: 40px;
+        left: 30px;
+        opacity: 0;
+    }
+
+    .photo.active2 h3 {
+        opacity: 1;
+    }
+
+div.item {
+    transition: .5s ease-in-out;
+}
+
+    div.item:hover {
+        filter: brightness(80%);
+    }
+
+.text-s {
+    font-size: 20px;
+}
+
+.text-xl {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
